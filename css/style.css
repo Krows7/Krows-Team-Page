@@ -65,20 +65,21 @@ a, .dropdown-button {
 	transition: 0.3s;
 }
 
-.dropdown-button:hover a {
-
-	height: auto;
-}
-
 .dropdown-content {
 
-	/*display: none;*/
-	/*transition: top 0.5s;*/
+	display: none;
+	text-indent: 1.5em;
 }
 
 .fa-caret-down {
 
 	float: right;
+	transform: rotate();
+}
+
+.rotated {
+
+	transform: rotate(180deg);
 }
 
 .content p {
@@ -152,16 +153,4 @@ h2 {
 .sticky ~ .content {
 
 	padding-top: 50px;
-}
-
-.dropdown-content li {
-
-	opacity: 0;
-}
-
-.ul-animate li {
-
-	animation: drop 0.9s;
-	animation-fill-mode: forwards;
-	opacity: 1;
 }

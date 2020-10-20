@@ -25,7 +25,14 @@ function resize(closed) {
 function setVisible(clazz) {
 
 	var element = document.getElementsByClassName(clazz)[0];
-	element.style.display = other(element.style.display, "inline-block", "none");
+	element.style.display = other(element.style.display, "block", "none");
+}
+
+function releaseList(e, clazz) {
+
+	setVisible(clazz);
+
+	e.getElementsByTagName('i')[0].classList.toggle("rotated");
 }
 
 function other(value, f, s) {
