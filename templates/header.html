@@ -1,27 +1,27 @@
-<ul class="header">
+<ul id="header-list">
 	<li><a onclick="switchNav()"><i class="fas fa-bars"></i></a></li>
 	<li><a href="/index.html">Home</a></li>
 	<li><a href="/about.html">About</a></li>
 	<li><a href="/help.html">Help</a></li>
 	<li><a href="/contacts.html">Contacts</a></li>
-	<li id="li_text">
-		Krows Team
-	</li>
+	<li id="header-name">Krows Team</li>
 </ul>
-<div id="sidenav" class="sidenav">
+<div id="sidenav">
 	<a href="/project_pages/flexmine.html">FlexMine</a>
 	<a href="/project_pages/coop.html">StS Co-op Mod</a>
 	<a href="/project_pages/coretools.html">CoreTools</a>
 	<a href="/project_pages/gamecreator.html">GameCreator (in Development)</a>
 	
-	<a onclick="releaseList(this, 'dropdown-content')" class="dropdown-button">
+	<a onclick="releaseList(this, 'dropdown-wrapper')">
 		Games
 		<i class="fa fa-caret-down"></i>
 	</a>
-	<div class="dropdown-content">
-		<a href="/games/bulls.html">Bulls & Cows</a>
-		<a href="/games/memory.html">Memory</a>
-		<a href="/games/snake.html">Snake</a>
-		<a href="/games/ttt.html">Tic Tac Toe</a>
+	<div id="dropdown-wrapper">
+		<div id="dropdown-content">
+			<a href="/games/bulls.html">Bulls & Cows</a>
+			<a href="/games/memory.html">Memory</a>
+			<a href="/games/snake.html">Snake</a>
+			<a href="/games/ttt.html">Tic Tac Toe</a>
+		</div>
 	</div>
 </div>

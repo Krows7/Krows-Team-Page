@@ -20,6 +20,9 @@ function loadStyle(url, callback) {
 
 loadStyle("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 loadStyle("/css/style.css");
+loadStyle("/css/header.css");
+loadStyle("/css/content.css");
+loadStyle("/css/footer.css");
 
 load("/js/jquery-3.5.1.min.js", () => load("/js/template_loader.js"));
 load("https://kit.fontawesome.com/85ca5f4dd1.js");

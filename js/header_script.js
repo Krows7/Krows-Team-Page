@@ -7,6 +7,8 @@ window.onload = () => {
 	header = document.getElementById("header");
 
 	sticky = header.offsetTop;
+
+	setSticky();
 };
 
 function setSticky() {

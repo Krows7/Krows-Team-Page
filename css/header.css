@@ -1,0 +1,80 @@
+#header-list,#sidenav {
+
+	background-color: #6699ff;
+	overflow: hidden;
+}
+
+#header-list {
+
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#header-list li {
+
+	float: left;
+}
+
+#header a {
+
+	display: block;
+	padding: 15px 16px;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
+#header-list #header-name {
+
+	padding: 14px 16px;
+	float: right;
+	color: white;
+	font-weight: 700;
+}
+
+#sidenav {
+
+	height: 100%;
+	width: 0;
+	position: fixed;
+	transition: 0.5s;
+	font-weight: 700;
+	font-size: 20pt;
+}
+
+#sidenav a {
+
+	padding: 8px 8px 8px 32px;
+	white-space: nowrap;
+	text-align: left;
+}
+
+#header a:hover {
+
+	background-color: #1a66ff;
+}
+
+#dropdown-content {
+
+	transition: 0.5s;
+	text-indent: 1.5em;
+}
+
+#dropdown-wrapper {
+
+	transition: height 0.5s;
+	height: 0;
+	overflow: hidden;
+}
+
+.fa-caret-down {
+
+	float: right;
+}
+
+.rotated {
+
+	transform: rotate(180deg);
+}
