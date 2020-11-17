@@ -7,12 +7,16 @@ function switchNav() {
 	document.getElementById("sidenav").style.width = navClosed ? "0px" : "100%";
 }
 
-function releaseList(e, clazz) {
+function releaseList(e, id) {
 
-	var element = document.getElementById(clazz);
-
-	if(element.clientHeight) element.style.height = 0;
-	else element.style.height = element.children[0].clientHeight + "px";
+	coverElement(id);
 
 	e.getElementsByTagName('i')[0].classList.toggle("rotated");
+}
+
+function coverElement(id) {
+
+	var e = document.getElementById(id);
+
+	e.style.height = e.clientHeight ? 0 : e.children[0].clientHeight + "px";
 }

@@ -1,13 +1,21 @@
-<ul id="header-list">
+<ul id="header-list" class="colorable" light="#6699ff" dark="#334C7F">
 	<li><a onclick="switchNav()"><i class="fas fa-bars"></i></a></li>
 	<li><a href="/index.html">Home</a></li>
 	<li><a href="/about.html">About</a></li>
 	<li><a href="/help.html">Help</a></li>
 	<li><a href="/contacts.html">Contacts</a></li>
 	<li><a href="/events.html">Events</a></li>
-	<li id="header-name">Krows Team</li>
+	<li><a href="/blogs.html">Blogs</a></li>
+	<li><a href="/write_blog.html">Write a Blog</a></li>
+	<li id="header-name"><a onclick="coverElement('menu-wrapper')">Krows Team</a></li>
 </ul>
-<div id="sidenav">
+<div id="menu-wrapper">
+	<div id="menu">
+		<p>Switch Theme</p>
+		<input type="checkbox" id="theme-toggle" class="colorable" light="black" dark="white">
+	</div>
+</div>
+<div id="sidenav" class="colorable" light="#6699ff" dark="#334C7F">
 	<a href="/project_pages/flexmine.html">FlexMine</a>
 	<a href="/project_pages/coop.html">StS Co-op Mod</a>
 	<a href="/project_pages/coretools.html">CoreTools</a>

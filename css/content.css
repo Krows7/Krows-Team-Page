@@ -1,10 +1,13 @@
 #content {
-
+	
 	font-weight: 300;
 	font-size: 20pt;
 	padding-left: 20px;
-	display: table-cell;
-	overflow: hidden;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	overflow: auto;
+	flex-direction: column;
+	align-items: flex-start;
 	flex: 1 0 auto;
 }
 
@@ -13,13 +16,7 @@
 	text-indent: 50px;
 }
 
-#block {
-
-	display: block;
-}
-
 img {
 
-	float: left;
-	margin: 0 25px 0 0;
+	margin: 25px;
 }

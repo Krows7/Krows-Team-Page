@@ -1,4 +1,4 @@
-#header-list,#sidenav {
+#header-list, #sidenav {
 
 	background-color: #6699ff;
 	overflow: hidden;
@@ -15,6 +15,7 @@
 #header-list li {
 
 	float: left;
+	cursor: pointer;
 }
 
 #header a {
@@ -23,15 +24,68 @@
 	padding: 15px 16px;
 	text-decoration: none;
 	color: white;
+	user-select: none;
 	transition: 0.3s;
 }
 
 #header-list #header-name {
 
-	padding: 14px 16px;
 	float: right;
 	color: white;
 	font-weight: 700;
+	cursor: pointer;
+}
+
+#menu-wrapper {
+
+	right: 0;
+	position: fixed;
+}
+
+#menu #theme-toggle {
+
+	appearance: none;
+	outline: none;
+	margin: 8px;
+	width: 50px;
+	height: 22px;
+	background: white;
+	border-color: black;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: 0.1s;
+	position: relative;
+	/*transition: background 300ms ease-in-out 200ms, opacity 350ms ease-in-out 200ms, transform 400ms ease-in-out;*/
+}
+
+#menu #theme-toggle:checked {
+
+}
+
+#menu #theme-toggle:after {
+
+	width: 22px;
+	height: 22px;
+	border-radius: 20px;
+	background-color: white;
+	content: "";
+	transform: scale(0.7);
+	position: absolute;
+	left: 0;
+	box-shadow: 0 0 5px gold;
+	transition: 0.1s;
+}
+
+#menu #theme-toggle:checked:after {
+
+	left: 28px;
+	background-color: black;
+}
+
+#menu {
+
+	display: flex;
+	align-items: center;
 }
 
 #sidenav {
@@ -39,9 +93,14 @@
 	height: 100%;
 	width: 0;
 	position: fixed;
-	transition: 0.5s;
+	transition: 0.8s;
 	font-weight: 700;
 	font-size: 20pt;
+}
+
+#sidenav i {
+
+	transition: 0.5s;
 }
 
 #sidenav a {
@@ -51,7 +110,7 @@
 	text-align: left;
 }
 
-#header a:hover {
+#header a:hover, #content button:hover {
 
 	background-color: #1a66ff;
 }
@@ -62,7 +121,7 @@
 	text-indent: 1.5em;
 }
 
-#dropdown-wrapper {
+#dropdown-wrapper, #menu-wrapper {
 
 	transition: height 0.5s;
 	height: 0;
@@ -76,5 +135,5 @@
 
 .rotated {
 
-	transform: rotate(180deg);
+	transform: rotate(-180deg);
 }
